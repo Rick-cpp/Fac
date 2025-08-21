@@ -1,10 +1,10 @@
-package app.projects.boletim;
+package app.projects.array;
 
-import app.projects.boletim.pages.Routes;
+import app.projects.array.page.Routes;
 import app.util.node.Navigation;
 import app.util.node.NavigationPage;
 
-public class BoletimIndex implements NavigationPage {
+public class ArrayIndex implements NavigationPage {
     Routes routes = null;
 
     Routes getRoutes(Navigation navigation) {
@@ -18,6 +18,4 @@ public class BoletimIndex implements NavigationPage {
     public void render(Navigation navigation) {
         getRoutes(navigation).render();
     }
-    
-
 }

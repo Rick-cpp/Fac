@@ -1,5 +1,6 @@
 package app.pages;
 
+import app.projects.array.ArrayIndex;
 import app.projects.banco.BancoIndex;
 import app.projects.boletim.BoletimIndex;
 import app.projects.carro.CarroIndex;
@@ -15,6 +16,7 @@ public class Routes extends Navigation {
         register("school", new BoletimIndex()::render);
         register("bank", new BancoIndex()::render);
         register("car", new CarroIndex()::render);
+        register("array", new ArrayIndex()::render);
         return this;
     }
 

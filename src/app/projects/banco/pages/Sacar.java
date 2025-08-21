@@ -21,7 +21,6 @@ public class Sacar implements NavigationPage {
         Console.print(Banco.saque(quantidade));
 
         int context = Console.menu("Continuar", "Voltar");
-
         if (context == 1) navigation.popBack();
     }    
 }

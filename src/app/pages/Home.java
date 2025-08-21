@@ -27,6 +27,7 @@ public class Home implements NavigationPage {
             "Boletin",
             "Banco",
             "Carro",
+            "Arrays",
             "Sair"
         );
         
@@ -34,6 +35,7 @@ public class Home implements NavigationPage {
         if (selection == 1) navigation.navigate("school");
         if (selection == 2) navigation.navigate("bank");
         if (selection == 3) navigation.navigate("car");
-        if (selection == 4) MainLoop.exit();
+        if (selection == 4) navigation.navigate("array");
+        if (selection == 5) MainLoop.exit();
     }
 }
