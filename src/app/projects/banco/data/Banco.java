@@ -11,7 +11,7 @@ public class Banco {
     public static void register(Conta conta) { contas.add(conta); }
 
     public static boolean login(String numero) { 
-        for (var conta : contas) if (conta.numeroDaConta.equals(numero)) {
+        for (var conta : contas) if (conta.verificar(numero)) {
             login = conta;
             return true;
         }
@@ -20,28 +20,18 @@ public class Banco {
     }
 
     public static Conta recover(String name) {
-        for (var conta : contas) if (conta.numeroDaConta.equals(name)) return conta;
+        for (var conta : contas) if (conta.verificar(name)) return conta;
         return null;
     }
 
     public static boolean logado() { return login == null; }
 
     public static String saque(double quantidade) {
-        if (login.saldo >= quantidade) {
-            login.saldo -= quantidade;
-            return "Saque realizado com sucesso!";
-        }
-
-
-        return "Saldo insuficiente";
+        return login.sacar(quantidade);
     }
 
     public static String depositar(double quantidade) {
-        if (quantidade <= 0) {
-            return "Não se pode depositar valor negativo";
-        }
-        login.saldo += quantidade;
-        return "Valor depositado";
+        return login.depositar(quantidade);
     }
 
     public static void render() {

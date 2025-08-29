@@ -12,7 +12,7 @@ public class Livraria {
         String[] names = new String[livros.size()];
 
         for (int index = 0; index < livros.size(); index++) {
-            names[index] = livros.get(index).nome;
+            names[index] = livros.get(index).getName();
         }
 
         return names;

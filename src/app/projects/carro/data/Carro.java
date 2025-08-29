@@ -1,9 +1,9 @@
 package app.projects.carro.data;
 
 public class Carro {
-    String marca;
-    String modelo;
-    int ano;
+    private String marca;
+    private String modelo;
+    private int ano;
 
     public Carro(String nMarca, String nModelo, int nAno) {
         set(nMarca, nModelo, nAno);

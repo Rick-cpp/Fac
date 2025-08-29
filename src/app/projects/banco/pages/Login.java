@@ -38,7 +38,7 @@ public class Login implements NavigationPage {
                 return;
             }
 
-            Console.print("Número da conta: ", result.numeroDaConta);
+            Console.print("Número da conta: ", result.getNumero());
             Console.confirmation();
             return;
         }

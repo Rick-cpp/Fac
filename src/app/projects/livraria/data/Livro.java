@@ -3,9 +3,9 @@ package app.projects.livraria.data;
 import app.util.core.Console;
 
 public class Livro {
-    String nome;
-    String autor;
-    double valor;
+    private String nome;
+    private String autor;
+    private double valor;
 
     String[] args;
 
@@ -23,6 +23,10 @@ public class Livro {
     public void setPrice(double value) {
         this.valor = value < 0?0:value;
         args[2] = "valor: " + Double.toString(this.valor);
+    }
+
+    public String getName() {
+        return this.nome;
     }
 
     public double getPrice() { return this.getPrice(); }

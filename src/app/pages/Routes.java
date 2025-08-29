@@ -5,6 +5,7 @@ import app.projects.banco.BancoIndex;
 import app.projects.boletim.BoletimIndex;
 import app.projects.carro.CarroIndex;
 import app.projects.livraria.LivrariaIndex;
+import app.projects.person.PersonIndex;
 import app.util.core.MainLoop;
 import app.util.node.Navigation;
 
@@ -17,6 +18,7 @@ public class Routes extends Navigation {
         register("bank", new BancoIndex()::render);
         register("car", new CarroIndex()::render);
         register("array", new ArrayIndex()::render);
+        register("person", new PersonIndex()::render);
         return this;
     }
 

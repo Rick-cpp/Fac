@@ -1,4 +1,5 @@
 ## Head
+Nome     : Pedro Henrique Miranda Barros
 Matricula: 04145413
 
 ## Projetos
@@ -13,3 +14,4 @@ Matricula: 04145413
 ## TODO
 - [ ] Corrigir Bug de InputInt
 - [ ] ToStringSafe não consegue printar direto um Array
+- [ ] Separa Lib do Projeto
