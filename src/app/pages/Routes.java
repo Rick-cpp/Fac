@@ -4,6 +4,7 @@ import app.projects.array.ArrayIndex;
 import app.projects.banco.BancoIndex;
 import app.projects.boletim.BoletimIndex;
 import app.projects.carro.CarroIndex;
+import app.projects.filas.FilasIndex;
 import app.projects.livraria.LivrariaIndex;
 import app.projects.person.PersonIndex;
 import app.util.core.MainLoop;
@@ -19,6 +20,7 @@ public class Routes extends Navigation {
         register("car", new CarroIndex()::render);
         register("array", new ArrayIndex()::render);
         register("person", new PersonIndex()::render);
+        register("stack", new FilasIndex()::render);
         return this;
     }
 
