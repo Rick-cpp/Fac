@@ -30,6 +30,7 @@ public class Home implements NavigationPage {
             "Arrays",
             "Pessoas",
             "Filas",
+            "Polimorfismo",
             "Sair"
         );
         
@@ -40,7 +41,8 @@ public class Home implements NavigationPage {
         if (selection == 4) navigation.navigate("array");
         if (selection == 5) navigation.navigate("person");
         if (selection == 6) navigation.navigate("stack");
-        if (selection == 7) MainLoop.exit();
+        if (selection == 7) navigation.navigate("polimorfismo");
+        if (selection == 8) MainLoop.exit();
         
     }
 }

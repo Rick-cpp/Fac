@@ -7,6 +7,7 @@ import app.projects.carro.CarroIndex;
 import app.projects.filas.FilasIndex;
 import app.projects.livraria.LivrariaIndex;
 import app.projects.person.PersonIndex;
+import app.projects.polimorfismo.PolimorfismoIndex;
 import app.util.core.MainLoop;
 import app.util.node.Navigation;
 
@@ -21,6 +22,7 @@ public class Routes extends Navigation {
         register("array", new ArrayIndex()::render);
         register("person", new PersonIndex()::render);
         register("stack", new FilasIndex()::render);
+        register("polimorfismo", new PolimorfismoIndex()::render);
         return this;
     }
 

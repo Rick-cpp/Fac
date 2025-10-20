@@ -77,7 +77,7 @@ public class Console {
     }
 
     public static boolean confirmation(String message) { return confirmation(message, ""); }
-    public static boolean confirmation() { return confirmation("ENTER para continuar: ", ""); }
+    public static boolean confirmation() { return confirmation("ENTER para continuar: ", "[\\s\\S]*"); }
 
     public static void box(BiFunction<String, Integer, String> format, String... lines) {
         String[] f = new String[lines.length];
